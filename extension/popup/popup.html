@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Realtime Subtitles</h1>
+    <div class="controls">
+      <label for="engine">ASR Engine:</label>
+      <select id="engine">
+        <option value="vosk">Vosk (In-Browser)</option>
+        <option value="whisper">Whisper (Local GPU)</option>
+      </select>
+      <button id="toggle">Start</button>
+    </div>
+    <div class="status" id="status">Ready</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
